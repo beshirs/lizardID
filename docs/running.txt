@@ -1,1 +1,6 @@
 How to run Flask App:
+
+1: cd backend
+    ``` bash
+    python3 app.py
+    ````
