@@ -1,6 +1,11 @@
 How to run Flask App:
-
+*make sure all dependceis are installed*
 1: cd backend
+2: activate virtual environment
+    ```bash
+    source env/bin/activate
+    ```
+3:
     ``` bash
     python3 app.py
     ````
