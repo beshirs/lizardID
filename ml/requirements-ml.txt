@@ -1,0 +1,4 @@
+tensorflow>=2.12
+numpy
+pillow
+pillow-heif
