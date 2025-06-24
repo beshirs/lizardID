@@ -1,1 +1,10 @@
+# ignoring backend stuff
 backend/env/
+/env
+
+
+
+# ignoring ml stuff
+ml/data/
+backend/models/*.pth
+backend/models/*.h5
