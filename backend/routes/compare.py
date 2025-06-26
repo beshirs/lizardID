@@ -1,3 +1,0 @@
-#compare feature
-def compareImage()
-    
