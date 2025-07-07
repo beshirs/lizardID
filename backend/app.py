@@ -24,6 +24,14 @@ def testingMONGODB():
     result = mongo.db.test.insert_one({"ping": "success"})
     return f"Inserted with ID: {result.inserted_id}"
 
+@app.route('/api/count')
+def count():
+    return {"count": mongo.db.lizard_emeddings.count_documents({})}
+
+#@app.route('/api/predict')
+#def predictor ():
+    #return{'seen'}
+
 if __name__ == '__main__':
     print(app.url_map)
     app.run(debug=True, port=5050)

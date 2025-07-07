@@ -1,0 +1,2 @@
+curl -F file=@test_photos/lizard_01.jpg http://137.22.1.119:5050/api/predict
+ 
