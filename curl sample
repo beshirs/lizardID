@@ -1,2 +1,6 @@
 curl -F file=@test_photos/lizard_01.jpg http://137.22.1.119:5050/api/predict
  
+
+ # To test health route
+ curl http://127.0.0.1:5050/api/health
+# Expect {"status":"ok","time":"2025-07-10T...Z"}

@@ -2,11 +2,13 @@ from flask import Flask
 from config import MONGO_URI
 from extensions import mongo
 from routes.upload import upload_bp
-# remove or comment out this import for now:
-# from routes.predict import predict_bp
+from flask_cors import CORS
+from flask import jsonify
+from datetime import datetime
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = MONGO_URI
+CORS(app, resources={r"/api*":{"origins":"*"}}) #prevents CORS errors
 
 mongo.init_app(app)
 
@@ -28,9 +30,9 @@ def testingMONGODB():
 def count():
     return {"count": mongo.db.lizard_emeddings.count_documents({})}
 
-#@app.route('/api/predict')
-#def predictor ():
-    #return{'seen'}
+@app.route("/api/health", methods=["GET"])
+def health():
+    return jsonify({"status":"ok","time": datetime.utcnow().isoformat()}),200
 
 if __name__ == '__main__':
     print(app.url_map)

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <!-- App identity -->
+  <key>CFBundleName</key>
+  <string>frontendApp</string>
+  <key>CFBundleIdentifier</key>
+  <string>com.yourOrg.lizardID</string>
+
+  <!-- Camera permission prompt -->
+  <key>NSCameraUsageDescription</key>
+  <string>“Lizard Identifier” needs camera access to take lizard photos.</string>
+
+  <!-- Photo‐library permission prompt -->
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>“Lizard Identifier” needs photo library access to choose existing photos.</string>
+
+</dict>
+</plist>
