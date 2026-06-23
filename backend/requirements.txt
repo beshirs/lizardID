@@ -1,3 +1,5 @@
+tensorflow
+numpy
 flask
 flask-cors
 flask-pymongo
