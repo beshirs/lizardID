@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from app import mongo
+from extensions import mongo
 
 photos_bp = Blueprint('photos', __name__)
 

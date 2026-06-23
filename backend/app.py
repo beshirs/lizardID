@@ -1,6 +1,7 @@
 from flask import Flask
 from config import MONGO_URI
 from extensions import mongo
+from routes.photos import photos_bp
 from routes.upload import upload_bp
 from flask_cors import CORS
 from flask import jsonify
@@ -16,6 +17,7 @@ from routes.predict import predict_bp
 
 app.register_blueprint(upload_bp)
 app.register_blueprint(predict_bp)
+app.register_blueprint(photos_bp)
 
 @app.route('/')
 def home():
